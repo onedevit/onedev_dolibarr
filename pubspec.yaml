@@ -1,0 +1,50 @@
+name: onedev_dolibarr
+description: "Application mobile entreprise pour Dolibarr ERP/CRM (Android & iOS)"
+
+# Empêcher la publication accidentelle sur pub.dev
+publish_to: 'none'
+
+# Version de l'application (Nom de version + Numéro de build)
+version: 1.0.0+1
+
+# Environnement SDK Dart compatible
+environment:
+  sdk: ^3.13.2
+
+# Dépendances principales de l'application
+dependencies:
+  # Framework Flutter de base
+  flutter:
+    sdk: flutter
+
+  # Icônes iOS Cupertino
+  cupertino_icons: ^1.0.8
+
+  # Client HTTP pour la communication avec l'API REST Dolibarr
+  http: ^1.2.0
+
+  # Stockage local des paramètres (URL et DOLAPIKEY)
+  shared_preferences: ^2.2.2
+
+  # Gestionnaire d'état de l'application (Provider Pattern)
+  provider: ^6.1.1
+
+  # Formattage international des devises, nombres et dates
+  intl: ^0.19.0
+
+  # Typographie et polices Google Fonts (Inter Font)
+  google_fonts: ^6.1.0
+
+# Dépendances de développement et outils de test
+dev_dependencies:
+  # Framework de test Flutter
+  flutter_test:
+    sdk: flutter
+
+  # Règles de linter et bonnes pratiques Dart/Flutter
+  flutter_lints: ^6.0.0
+
+# Configuration spécifique au framework Flutter
+flutter:
+  # Activation du Material Design
+  uses-material-design: true
